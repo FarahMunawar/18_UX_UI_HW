@@ -3,137 +3,206 @@
  <head>
  <title>Background Image Example</title>
  
+ 
        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap" rel="stylesheet">
- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Nunito:wght@200&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
  
- </head>
+</head>
 <body>
   <style>
     body {
-      background-image: url("images/background_1.png");
+      background-image: url("images/background.png");
       background-size: cover;
       background-position: center;
       
     }
   </style>
-    <header class="navigation">
-    <div class="inline-block logo">
-      <img src="../images/fm_logo.png" alt="Logo">
-      <p> Farah Munawar</p>
-    </div>
-    <nav class="inline-block">
-      <ul> 
-        <li class="inline-block">Work</li>
-        <li class="inline-block">About me</li>
-        <li class="inline-block">Gallery</li>
-        <li class="inline-block">Contact</li>
-      </ul>
-    </nav>
-   </header>
-   <section class="heroImg">
-    <div class="content">
-    <h1>“Designers and Artist use different tools and methods but, share the common objective to create communication through senses and emotions.”
-    </h1>
-      <button>Scroll to Explore</button>
-    </div>
-   </section>
+    <div id=" header">
+        <div class="container">
+            <nav>
+                <img src="../images/fm_logo.png" class="logo">
+                <p> Farah Munawar</p>
+                <ul id="sidemenu">
+                    <li><a href="#">Work </a></li>
+                    <li><a href="#">About Me </a></li>
+                    <li><a href="#">Gallery </a></li>
+                    <li><a href="#">Contact </a></li>
+                    <i class="fas fa-times-circle" style="color: #ffffff;" onclick="closemenu()"></i>
 
-   <section class="myWork">
-    <h2>My Work</h2>
-    <div class="workGrid">
-      <div>
-        <div class="row">
-          <div class="column">
-            <div class="work1">
-             <img src="images/mockup1-greyhound.jpg" alt="First Image">
-             <div class="text">
-              <h3>Greyhound Trust Website Redesign</h3>
-              <p>Non-profit organisation, is in dire need of a redesign to bring it up to par with other local websites within the same trust</p></div>
+                </ul>
+                <i class="fas fa-bars" style="color: #ffffff;" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <h1>“Designers and Artist use<br> different tools and<br>methods but, share the<br>common objective to<br>create communication<br> through senses and<br>emotions.”</h1>
+                
             </div>
-         </div>
-         <div class="column">
-           <div class="work2">
-              <img src="images/mockup-travel-sync.jpg" alt="Second Image">
-              <div class="text">
-               <h3>Travel Sync</h3>
-               <p>A travel wallet and directory App to facilitate coordinating, synchronizing, and gathering up-to-the-minute updates on airport amenities and destination details requires a considerable amount of effort</p>
-             </div>
-           </div>
-          </div>
         </div>
-    
-      <div class="grid-container">
-        <div class="work3">
-          <img src="images/mock-up-d-side.jpg" alt="Third Image">
-          <div class="text">
-            <h3>D-side</h3>
-            <p>D-side provides a simple, efficient, and fair way for users to make decisions about what to do or where to go.D-side can help users discover new experiences and reduce decision fatigue</p>
-          </div>
-        </div>
-      </div>
-      <div class="grid-container">
-        <div class="work4">
-          <img src="images/mockup-edu.jpg" alt="Fourth Image">
-          <div class="text">
-            <h3>U.S. Department of Education Website Redesign</h3>
-            <p>The objective of the website redesign project is to enhance the user experience through the resolution of concerns related to navigation, accessibility, and the organization of content.</p>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-  
+    <!-------------my work------------>
+    <div id="work">
+        <div class="container">
+            <h2 class="sub-title">My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/mockup1-greyhound.jpg">
+                    <div class="layer">
+                        <h3>Greyhound Trust Website Redesign</h3>
+                        <p>Non-profit organisation, is in dire need of a redesign to bring it up to par with other local websites within the same trust.</p>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/mockup-travel-sync.jpg">
+                    <div class="layer">
+                        <h3>Travel Sync Mobile App</h3>
+                        <p>A travel wallet and directory App to facilitate coordinating,synchronising, and gathering up-to-the-minute updates on airport amenities and destination details.</p>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/mock-up-d-side.jpg">
+                    <div class="layer">
+                        <h3>D-side, Mobile App Decisions made Easy</h3>
+                        <p>D-side provides a simple, efficient, and fair way for users to make decisions about what to do or where to go.D-side can help users discover new experiences and reduce decision fatigue.</p>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/mockup-edu.jpg">
+                    <div class="layer">
+                        <h3>U.S Education Website Redesign</h3>
+                        <p>The objective of the website redesign project is to enhance the user experience through the resolution of concerns related to navigation, accessibility, and the organisation of content.</p>
+                       
+                    </div>
+                </div>
+                </div>
 
+            </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <footer class="footer">
-     <h2>Contact</h2>
-    
-    <div class="contactme">
-        
-        <!-- Use Font Awesome icon -->
-        <i class="fas fa-envelope" style="color: #ffffff;"></i>
-        <a href = "mailto: farahmunawar@ymail.com">farahmunawar@ymail.com</a>
-
+        </div>
     </div>
-       <ul> 
-         <li class="inline-block">Work</li>
-         <li class="inline-block">About me</li>
-         <li class="inline-block">Gallery</li>
-       </ul>
-    <div class="resume">
-        <button>Resume</button>
-     </div>  
-      <div class="icons">
-  <i class="fab fa-behance-square" style="color: #ffffff;"></i>
-       <i class="fab fa-linkedin" style="color: #ffffff;"></i>
-   </div>
+    <!-- About me -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/potrait.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="subtitle">About Me</h2>
+                    <p>Hi, My name is <span style="color:#DF7830;font-weight:700">Farah Munawar</span>. I am <span style="color:#DF7830;font-weight:bold">fine artist</span> turned <span style="color:#DF7830;font-weight:bold">UX/UI Designer</span>.
+                        My design ethos consist of  <span style="color:#DF7830;font-weight:bold">prioritising user needs</span> and <span style="color:#DF7830;font-weight:bold">goals</span>.Aims to result in intuitive and <span style="color:#DF7830;font-weight:bold">user centric experience</span>.It's equally crucial for these efforts to be genuine and aligned with the <span style="color:#DF7830;font-weight:bold">company's core values</span>.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Collaboration & Communication:</span><br>Effectively  collaborating between  teams, stakeholders, and clients, to communicate design decisions and recommendations is been my strong suit as a designer.</li>
+                            <li><span>User Research:</span><br>My qualitative and quantitative  research helps gain insights into user behaviors, needs, and preferences.</li>
+                            <li><span>Empathy:</span><br>My design objective is to create communication through senses and emotions, empathising with users and being in their shoes and thinking with them are the roots of my design process.</li>
+                            <li><span>Analytical Thinking:</span><br>Analysing data, metrics, and user feedback to inform design decisions and improvements considering user needs and goals are core of my design process.</li>
+                            <li><span>Information Architecture:</span><br>Designing or Redesigning, structuring information in a coherent manner for easy user understanding and navigation prioritising user pain points.</li>
+                            <li><span>Problem Solving:</span><br>Problem solving helps understan, define then create in my design process by exploring multiple prespective, brainstrom ideas and consider various design alternatives to find the most effective solution ehich then analyse and evaluate critically.</li>
+                            <li><span>Visual Design:</span><br>Aesthetic sensibility and proficiency in creating visually appealing and cohesive designs that align with user expectations.</li>
+                            <li><span>Interaction Design:</span><br>Interaction design skills works as a bridge  between users and digital interfaces.</li>
+                            <li><span>Prototyping:</span><br>Prototypes helps me test and iterate on design concepts and gather feedback from users to validate my findings.</li>
+                            <li><span>Testing:</span><br>Guerilla testing, Usability Testing, A/B Testing and Accessibility Testing helps validate my design decisions on different stages of design process.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>March 2020-Present</span><br>Digital Designer, Morgan Reach Chartered Accoutants</li>
+                            <li><span>April 2014-Feburary 2020</span><br>Freelance Graphic Designer</li>
+                            <li><span>April 2011-Feburary 2014</span><br>Graphic Designer, Packages Limited, Pakistan</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Feburary-March2023</span><br>UX/UI Boot Camp, University of Birmingham</li>
+                            <li><span>Feburary 2023</span><br>Introduction to User Experience Design Authorized by Georgia Institute of Technology offered through Coursera</li>
+                            <li><span>January 2023</span><br>Fundamentals of Graphic Design Authoroised by California institute of the Arts offered by Coursera</li>
+                            <li><span>2007-2011</span><br>Bachelors of FineArts, National College of Arts, Pakistan</li>
+                            <li><span>2004-2006</span><br>FA Intermediate Fine Arts, Lahore College for Women University, Pakistan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="subtitle">Contact Me</h2>
+                    <p><i class="fas fa-envelope"></i>farahmunawar@ymail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.behance.net/farahmunawar1"><i class="fab fa-behance-square"></i></a>
+                        <a href="https://www.linkedin.com/in/farah-munawar-74239027a/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/FarahMunawar_CV.pdf"download class="btn btn2">Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name ="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright© Farah Munawar.2023</p>
+        </div>
+    </div>
+    <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
-  </footer>
-  <head>
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
 
-</body>
+
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+
+    }
+</script>
+    
+</body
 </html>
